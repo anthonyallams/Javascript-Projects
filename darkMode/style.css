@@ -1,0 +1,142 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@import url("https://fonts.googleapis.com/css2?&family=Roboto");
+
+:root {
+  --background-color: #f0f0f0;
+  --primary-color: #7ed56f;
+  --secondary-color: #55c57a;
+  --tertiary-color: #28b485;
+  --phd-color: #051811;
+  --text-color: #000;
+  --button-color: #3498db;
+  --light-color: #fff;
+  --font: "Roboto", sans-serif;
+}
+
+.darkMode {
+  --background-color: #000;
+  --primary-color: #000;
+  --secondary-color: #000;
+  --phd-color: #fff;
+  --text-color: #f0f0f0;
+  --button-color: #f0f0f0;
+  --light-color: #000;
+  --font: "Roboto", sans-serif;
+}
+
+body {
+  font-family: var(--font);
+  position: relative;
+  background: linear-gradient(
+    120deg,
+    var(--primary-color),
+    var(--secondary-color)
+  );
+  line-height: 1.5;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 95vh;
+}
+
+h1 {
+  line-height: 1;
+  margin: 1rem auto;
+  text-transform: uppercase;
+}
+span {
+  display: block;
+}
+
+.span1 {
+  font-size: 7rem;
+}
+
+.span2 {
+  font-size: 4.4rem;
+}
+
+p {
+  max-width: 600px;
+  text-align: justify;
+  margin: 1rem 0;
+}
+
+.btn-group {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-top: 2rem;
+}
+
+button {
+  padding: 12px;
+  border-radius: 5px;
+  margin: 0 1rem;
+  font-size: 16px;
+  background: var(--phd-color);
+  border: 2px solid var(--text-color);
+  color: var(--light-color);
+  text-transform: uppercase;
+}
+
+.dark-mode-toggle {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  height: 30px;
+  width: 30px;
+  border: 2px solid var(--text-color);
+  background: transparent;
+  border-radius: 4px;
+  padding: 4px;
+}
+
+@media (max-width: 800px) {
+  h1 span {
+    display: block;
+  }
+  .span1 {
+    font-size: 6rem;
+  }
+  .span2 {
+    font-size: 3.6rem;
+  }
+  p {
+    max-width: 480px;
+  }
+}
+@media (max-width: 600px) {
+  h1 span {
+    display: block;
+  }
+  .span1 {
+    font-size: 5rem;
+  }
+  .span2 {
+    font-size: 3rem;
+  }
+  p {
+    max-width: 400px;
+  }
+  button {
+    padding: 10px;
+  }
+}
