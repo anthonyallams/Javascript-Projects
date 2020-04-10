@@ -40,6 +40,7 @@ body {
     var(--secondary-color)
   );
   line-height: 1.5;
+  color: var(--text-color);
 }
 
 .container {
@@ -107,6 +108,7 @@ button {
   background: transparent;
   border-radius: 4px;
   padding: 4px;
+  cursor: pointer;
 }
 
 @media (max-width: 800px) {
