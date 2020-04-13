@@ -1,0 +1,82 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+
+body {
+  font-family: "Lato", sans-serif;
+  height: 100vh;
+  background: #d1cfcf;
+  color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.container {
+  background: #f0f0f0;
+  border-radius: 0.5rem;
+  max-width: 800px;
+  padding: 1rem;
+}
+
+header {
+  margin: 0 auto 1rem;
+  padding: 1rem;
+}
+
+h1 {
+  margin: -1rem auto 1rem;
+  text-transform: uppercase;
+}
+
+input,
+button {
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  margin: 0.5rem auto;
+}
+
+input:focus,
+button:focus {
+  outline: none;
+}
+
+.todo-list {
+  background: #fff;
+  margin: 1rem auto;
+  /* padding: 0.2rem; */
+  list-style: none;
+}
+
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-bottom: 1px solid #d1cfcf;
+  padding: 0.5rem;
+}
+
+.add-todo {
+  margin: 2rem auto 1rem;
+}
+
+.add-todo label {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+button {
+  border-radius: 0.4rem;
+  background: #777;
+  color: #fff;
+  font-size: 1.2rem;
+}

@@ -8,7 +8,8 @@
     2. User can add a new Todo Item
     3. User can delete existing Todo Item
     4. User can search existing Todo Items
-    5. Users Todo list will be stored on the browser using localStorage
+    5. User can clear all items in Todo List
+    6. Users Todo list will be stored on the browser using localStorage
 
 # BEST PRACTICES
 
