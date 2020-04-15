@@ -11,3 +11,4 @@
     5. Use filter method to show Millionaires
     6. Use Sort method to sort individuals based on their networth
     7. Use reduce to calculate the Total networth
+    8. Create the landing page using HTML and CSS
