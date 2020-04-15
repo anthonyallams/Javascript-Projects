@@ -11,5 +11,5 @@
 
     1. Ensure the code is readable and maintainable
     2. Ensure the code is commented, clean and properly linted
-    3. Ensure the code is scalabile
+    3. Ensure the code is scalable
     4. Ensure code is tested
