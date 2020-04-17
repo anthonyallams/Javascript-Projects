@@ -71,6 +71,14 @@ button {
   border-radius: 10px;
 }
 
+button:focus {
+  outline: none;
+}
+
+.loader {
+  text-align: center;
+}
+
 .results,
 .loader {
   display: none;
@@ -83,6 +91,6 @@ button {
   background: #f7c3c3;
   color: #000;
   width: 100%;
-  height: 3rem;
+  height: 2.2rem;
   text-align: center;
 }
