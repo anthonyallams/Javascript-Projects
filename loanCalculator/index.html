@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>LOAN CALCULATOR APP</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Loan Calculator</h1>
+      </header>
+      <form class="form">
+        <div class="form-group form-input">
+          <span>NGN</span>
+          <input type="number" class="amount" placeholder="Loan Amount" />
+        </div>
+        <div class="form-group form-input">
+          <span>%</span>
+          <input type="number" class="interest" placeholder="Annual Interest" />
+        </div>
+        <div class="form-group form-input">
+          <input type="number" class="years" placeholder="Repayment Years" />
+        </div>
+        <button class="submit">Calculate</button>
+      </form>
+      <!-- Spinning Loader -->
+      <div class="loader">
+        <img src="./img/spinner.gif" alt="loader" class="spinner" />
+      </div>
+      <!-- Results of Loan Calculations -->
+      <div class="results">
+        <div class="form-group result-input">
+          <span>Monthly Payment</span>
+          <input type="number" class="monthly-payment" disabled />
+        </div>
+        <div class="form-group result-input">
+          <span>Total Payment</span>
+          <input type="number" class="total-payment" disabled />
+        </div>
+        <div class="form-group result-input">
+          <span>Total Interest</span>
+          <input type="number" class="total-interest" disabled />
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
