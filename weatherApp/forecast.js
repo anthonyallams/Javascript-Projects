@@ -1,4 +1,6 @@
-const key = "GFGsTcRUuRiV63FlyFucEl0wbh5LrntO";
+// const key = "GFGsTcRUuRiV63FlyFucEl0wbh5LrntO";
+// MikeBruno account
+const key = "LJ09NpWshNRBaJgGOA57VCtFA0mwAMjS";
 
 // "http://dataservice.accuweather.com/locations/v1/cities/search";
 // http://dataservice.accuweather.com/currentconditions/v1/
@@ -24,14 +26,15 @@ const getWeather = async (id) => {
   const response = await fetch(base + query);
   const data = await response.json();
 
-  console.log(data[0]);
+  //   console.log(data[0]);
+  return data[0];
 };
 
 // getCity("lagos");
 // getWeather(4607);
 
-getCity("lagos")
-  .then((data) => {
-    getWeather(data.Key);
-  })
-  .catch((err) => console.log(err));
+// getCity("lagos")
+//   .then((data) => {
+//     getWeather(data.Key);
+//   })
+//   .catch((err) => console.log(err));

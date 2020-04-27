@@ -18,7 +18,7 @@ body {
 
 .container {
   margin: 1rem auto;
-  max-width: 450px;
+  max-width: 400px;
   height: 80vh;
   color: #111;
 }
@@ -83,14 +83,18 @@ input {
 }
 
 .none {
-  /* display: none; */
+  display: none;
+}
+
+.weather-info {
+  margin: 0;
 }
 
 .icon {
   position: relative;
   top: -50px;
   left: 35%;
-  /* margin-bottom: -50px; */
+  margin-bottom: -30px;
   width: 100px;
   text-align: center;
   border-radius: 50%;
