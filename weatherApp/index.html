@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Naija Weather App</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1 class="tac mbb">Allams Weather App</h1>
+        <form>
+          <label for="location" class="mbs db"
+            >Enter your location for Weather Information</label
+          >
+          <input
+            type="text"
+            name="location"
+            class="location"
+            placeholder="Enter City"
+          />
+        </form>
+      </header>
+      <div class="card none">
+        <img src="https://via.placeholder.com/100" alt="" class="db time" />
+        <div class="icon">
+          <img src="" alt="" />
+        </div>
+        <div class="weather-info">
+          <div class="fwb ttu mbs">City name</div>
+          <div class="mbs">Weather condition</div>
+          <div class="temperature ttu fwb">
+            <span>Temperature</span>
+            <span>&deg;C</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="forecast.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
