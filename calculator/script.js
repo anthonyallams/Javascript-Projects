@@ -48,6 +48,7 @@ class Calculator {
     let prev = parseFloat(this.previousOperand);
     let current = parseFloat(this.currentOperand);
 
+    // Check each of the arithmetic operations and perform the operation
     switch (this.operation) {
       case "/":
         computation = prev / current;
@@ -75,6 +76,8 @@ class Calculator {
     const integerDigits = parseFloat(stringNumber.split(".")[0]);
     const decimalDigits = stringNumber.split(".")[1];
     let integerDisplay;
+
+    // Check if integer part is a number, return if not OR convert to string representation using toLocaleString
     if (isNaN(integerDigits)) {
       integerDisplay = "";
     } else {
@@ -82,6 +85,8 @@ class Calculator {
         maximumFractionDigits: 0,
       });
     }
+
+    // If the decimal part exists, concatenate integer and decimal parts OR just return the integer part
     if (decimalDigits !== undefined) {
       return (integerDisplay = `${integerDigits}.${decimalDigits}`);
     } else {
