@@ -8,8 +8,8 @@
     2. User can do addition, subtraction, multiplication, and dividation operations
     3. User can work with positive and negative integers 0-9
     4. User can work with the "." notations for decimal points
-    5. User will get final arithmetic operation result displayed to screen with "=" operand
-    6. User can delete current and all operations using the "AC" and "DEL" buttons
+    5. User will get final arithmetic operation result displayed to screen with = operand
+    6. User can clear all operations and delete digits using the clear and delete buttons
     7. User will be shown the direct input and operation history on the output screen
 
 ## BEST PRACTICES
