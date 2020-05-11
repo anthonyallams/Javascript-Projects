@@ -1,0 +1,115 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(
+    276deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(0, 48, 143, 1) 35%,
+    rgba(8, 28, 133, 1) 41%,
+    rgba(7, 40, 141, 1) 45%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.clock {
+  position: relative;
+  background: #ffffffcc;
+  height: 25rem;
+  width: 25rem;
+  border: 2px solid #222;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.clock .number {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  --rotation: 0;
+  transform: rotate(var(--rotation));
+}
+
+.clock .number1 {
+  --rotation: 30deg;
+}
+.clock .number2 {
+  --rotation: 60deg;
+}
+.clock .number3 {
+  --rotation: 90deg;
+}
+.clock .number4 {
+  --rotation: 120deg;
+}
+.clock .number5 {
+  --rotation: 150deg;
+}
+.clock .number6 {
+  --rotation: 180deg;
+}
+.clock .number7 {
+  --rotation: 210deg;
+}
+.clock .number8 {
+  --rotation: 240deg;
+}
+.clock .number9 {
+  --rotation: 270deg;
+}
+.clock .number10 {
+  --rotation: 300deg;
+}
+.clock .number11 {
+  --rotation: 330deg;
+}
+
+.clock .hand {
+  position: absolute;
+  --rotation: 0;
+  bottom: 50%;
+  left: 50%;
+  transform-origin: bottom;
+  transform: translateX(-50%) rotate(calc((var(--rotation)) * 1deg));
+  border-top-left-radius: 0.4rem;
+  border-top-right-radius: 0.4rem;
+}
+
+.clock .second {
+  background: #f00;
+  height: 45%;
+  width: 3px;
+}
+.clock .minute {
+  background: #000;
+  height: 38%;
+  width: 6px;
+}
+.clock .hour {
+  background: #000;
+  height: 30%;
+  width: 9px;
+}
+
+.clock::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: #000;
+  height: 1.2rem;
+  width: 1.2rem;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
