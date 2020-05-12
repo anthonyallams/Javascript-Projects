@@ -8,6 +8,7 @@
     2. User can add a book title, author, isbn
     3. The added details are displayed back for the user
     4. User can delete the book details
+    5. Book details are stored in local storage for future access
 
 ## BEST PRACTICES
 
